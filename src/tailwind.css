@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+@layer components {
+    .slick-prev,
+    .slick-next {
+      width: auto;
+      height: auto;
+      background: #eee;
+      padding: 10px;
+      z-index: 40;
+    }
+  
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus {
+      color: #000;
+      opacity: 0.8;
+      background: #eee;
+    }
+  
+    .slick-next {
+      margin-right: 18px;
+    }
+  
+    .slick-prev {
+      margin-left: 8px;
+    }
+  
+    .slick-prev::before {
+      content: "\f053";
+    }
+  
+    .slick-next::before {
+      content: "\f054";
+    }
+  
+    .slick-prev::before,
+    .slick-next::before {
+      color: #000;
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+  
+    .sidebar-section {
+      @apply mb-6
+    }
+
+    .mobile-navbar{
+      width:0px;
+      height:100vh;
+      backgroung:#fff;
+      position:absolute;
+      left: 0px;
+      top: -16px;
+      text-align:left;
+      box-shadow:10px 10px 20px #8080805e;
+      overflow-y: auto;
+      transition:.5s all;
+      z-index: 0;
+
+    }
+    .mobile-navbar{
+      width: 300px;
+    }
+  }
